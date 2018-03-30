@@ -1,0 +1,13 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.3.RELEASE'
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+    repositories {
+        maven {
+            url 'http://maven.solarule.cn/artifactory/libs-release'
+        }
+    }
+}
